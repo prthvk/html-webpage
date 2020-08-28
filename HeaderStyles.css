@@ -37,9 +37,65 @@ li:hover{
 }
 
 .links{
-    align-items: center;
+    /* align-items: center; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 50%;
+    padding-top:1em
+}
+
+@media(max-width:586px){
+
+    body{
+        font-family: Helvetica, sans-serif;
+        background-color: whitesmoke;
+        margin: 0em;
+    }
+    .header-row{
+        align-items: center;
+        background-color: rgb(226, 241, 245);
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+        position: fixed;
+        width: 100%;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        padding-inline-start: 0px;
+        justify-content: space-between;
+        text-align: left;
+    }
+    
+    li{
+        color: rgb(50, 51, 50);
+        text-decoration: none;
+        list-style-type: none;  
+        text-align: left;
+    }
+    
+    li:hover{
+        color:rgb(123, 184, 175);
+    }
+    
+    .my-space{
+        align-items: center;
+        text-align:center;
+        /* width: 25%; */
+        padding-left: 1em;
+        padding-right: 2em;
+        padding-top:0.4em;
+        font-size: 3em;
+    }
+    
+    .links{
+        /* align-items: center; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+        text-align: left;
+        padding-top:0em
+    }
 }
